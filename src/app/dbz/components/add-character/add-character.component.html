@@ -1,0 +1,12 @@
+<h4>Agregar Personaje</h4>
+<form class="row" (ngSubmit)="emitCharacter()">
+    <input type="text" [(ngModel)]="character.name" name="name" class="form-control mb-2" placeholder="Nombre">
+
+    <input type="number" [(ngModel)]="character.power" name="power" class="form-control mb-2" placeholder="Poder">
+
+    <button type="submit" class="btn btn-primary">Agregar</button>
+    <!-- Noten que yo no necesito mandarle el objeto ni nada por el estilo al emitCharacter, porque ya lo tengo aquí, mediante este data binding que estoy haciendo.
+  Ya tengo acceso a la información de ese objeto como este en su última instancia, como haya sido editado, -->
+    <!-- <pre>{{character | json}}</pre> -->
+
+</form>
